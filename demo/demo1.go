@@ -9,6 +9,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 )
 
+// RunDemo1 查询区块
 func RunDemo1(client *ethclient.Client) {
 	blockNumber := big.NewInt(5671744)
 	header, err := client.HeaderByNumber(context.Background(), blockNumber)
